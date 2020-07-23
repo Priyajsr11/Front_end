@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<style>
+
+
+body{
+margin: 0;
+padding: 0;
+line-height: 1.5em;
+	
+}
+#header{
+	background: black;
+	font-family: arial;
+	height: 100px;
+
+
+}
+#content-wrapper{
+	float:left;
+	width: 100%;
+}
+#contentcolumn{
+	margin: 0 230px 0 230px;
+}
+#content-left{
+	float: left;
+	width: 230px;
+	margin-left: -100%;
+	background: skyblue;
+
+}
+
+
+#content-right{
+	float: left;
+	width: 230px;
+	margin-left: -230px;
+	background: yellow;
+	
+}
+#inner-text{
+	margin: 20px;
+	font-family: arial;
+	color: #5E5E5E;
+}
+
+#footer{
+	clear: left;
+	width: 100%;
+	background: black;
+	color: white;
+	font-family: arial;
+	text-align: center;
+	padding:4px;
+}
+/*---------------Navigation Rule-------------------*/
+ul {
+	list-style-type: none; /*this ensure that that there will not be any bullets or any signs between the text*/
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+li{
+	float: left;
+	border: solid #bbb;
+
+}
+li: last-child{
+	border-right: none;
+} 
+li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+
+
+}
+li a:hover:not(.active){
+	background-color: #808080;
+} 
+.active{
+	background-color: skyblue;
+}
+/*----------------Responsive Layout--------------------------*/
+@media (max-width: 840px){/*Drop Right Column Down*/
+ #column-left {
+	margin-left: -100%;
+
+}
+#column-right {
+	float: none;
+	width: 100%;
+	margin-left: 0;
+	clear: both;
+
+}
+#contentcolumn{
+	margin-right: 0;
+}	
+
+}
+@media (max-width: 640px){/*Drop left Column Down*/
+
+#column-left {
+	float: none;
+	width: 100%;
+	margin-left: 0;
+	clear: both;
+
+}
+#contentcolumn{
+	margin-left: 0;
+}
+}
+
+
+
+
+
+
+</style>
+
+
+
+</head>
+
+<body>
+	<div class="container">
+
+     <div id="header">
+
+
+      <ul style="display:inline;">
+      	<li><a class="active" href="home">Home</a></li>
+      	<li><a href="#news">About</a></li>
+      	<li><a href="contact">News</a></li>
+      	<li><a href="about">Contact</a></li>
+      </ul>
+
+     </div>
+     <div id="content-wrapper">
+     	<div id="contentcolumn">
+     		<div id="inner-text">
+     			Goole is a town, civil parish and inland port located at junction 36 off the M62 via the A614 and approximately 45 miles (72 km) from the North Sea at the confluence of the rivers Don and Ouse in the East Riding of Yorkshire, England, although historically within the West Riding of Yorkshire. Goole lies 19 miles (31 km) south of York and 29 miles (47 km) west of Hull.
+
+                According to the 2011 UK census, Goole parish had a population of 19,518,[1] an increase on the 2001 UK census figure of 17,600.[2] The port, which is the UK's furthest inland port, is highly versatile and capable of handling nearly 2 million tonnes of cargo per annum, making it one of the most important ports on the east coast of England.[3]
+
+                Goole is twinned with Złotów in Poland. Goole was informally twinned with Gibraltar in the 1960s; at that time, Gibraltar Court was named in Goole and Goole Court was named in Gibraltar.
+            </div>
+
+        </div>
+
+    </div>
+    <div id="content-left">
+          <div id="inner-text">
+
+
+
+
+    	<em> 230px</em>In the 1820s, the Aire and Calder Navigation company proposed development of a new canal to transport coal, from existing broad canal from Knottingley in the northern sector of the coalfield in 1826. Once it reached Goole, the company proposed development of a new floating dock, capable of handling larger sea-going vessels. Chief engineer Thomas Hamond Bartholomew was instructed to build the canal, docks and an associated company town to house both the dock workers and visiting seamen.[4] Bartholomew commissioned civil engineer and builder Sir Edward Banks company to construct part of the canal and the eight transshipment docks, and to lay out the associated new town to the west of the existing wooden bridge. Resultantly, the "Banks Arms Hotel" on Aire Street – today known as the "Lowther Hotel" – was in 1824 the first building constructed in what was known as "New Goole"; The Macintosh Arms public house on the same street took its name from engineer Hugh Macintosh.
+          </div>
+    </div>   
+
+    <div id="content-right">
+          <div id="inner-text">
+
+
+
+
+    	<em> 230px</em>Three locks keep the water in 37 acres (150,000 m2) of floating docks at a constant depth of 6 metres (20 ft), by preventing the level from rising and falling with the tides in the River Ouse. Once ships are within the complex, eight docks provide a total quayside of 3 miles (4.8 km). Beside the docks are transit sheds where cargo is stored, many of which are equipped with overhead cranes.[4] Unlike many ports, every one of the eight docks has been in full, commercial operation since its construction in the period from 1826 to 1912.
+
+        William Hamond Bartholomew succeeded his father T. H. Bartholomew in 1853 and introduced the Tom Pudding system of compartment boats, which could carry around 40 long tons (41,000 kg) of coal in 1863. On reaching the docks, the barges were lifted by large hoists, from which they could be discharged directly into seagoing ships, a system which proved so successful that it competed against rail until 1985.
+          </div>
+    </div>   
+
+
+
+
+
+
+
+    <div id="footer">Footer</div>
+
+</div>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
